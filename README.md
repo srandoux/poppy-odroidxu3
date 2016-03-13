@@ -21,12 +21,14 @@ http://poppy.local/wificonfig/?page=wireless
 
 image was created from a 32GB emmc card:
 #make a full image from the card
+```
 dd if=/dev/mmcblk1 of=odroid_xu3_ubunt1510_poppy bs=1k
 
 #mount the image on a loop device
 losetup -f --show odroid_xu3_ubunt1510_poppy /dev/loop0
 
 #check the image structure
+
 fdisk -l /dev/loop0 
 
   Disk /dev/loop0: 29,1 GiB, 31268536320 bytes, 61071360 sectors
@@ -39,7 +41,7 @@ fdisk -l /dev/loop0
   Device       Boot  Start      End  Sectors  Size Id Type
   /dev/loop0p1        2048   264191   262144  128M  c W95 FAT32 (LBA)
   /dev/loop0p2      264192 61070336 60806145   29G 83 Linux
-
+  
 #compute the offset of the second partition 
 offset for the second partition is 264192 * 512 = 135266304
 
@@ -86,6 +88,6 @@ parted /dev/loop0
 
 #cut the image to a new size as show by the parted above
 dd if=odroid_xu3_ubunt1510_poppy odroid_xu3_ubunt1510_poppy_reduce count=9501434
-
+```
 
  

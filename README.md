@@ -17,11 +17,10 @@ http://poppy.local
 http://poppy.local/poppy-monitor/
 http://poppy.local/snap/snap.html
 
-http://poppy.local/wificonfig/?page=wireless
 
-image was created from a 32GB emmc card:
-#make a full image from the card
+#image was created from a 32GB emmc card as described below
 ```
+#make a full image from the card
 dd if=/dev/mmcblk1 of=odroid_xu3_ubunt1510_poppy bs=1k
 
 #mount the image on a loop device

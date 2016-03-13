@@ -19,6 +19,8 @@ http://poppy.local/snap/snap.html
 
 
 #image was created from a 32GB emmc card as described below
+https://hubic.com/home/pub/?ruid=aHR0cHM6Ly9sYjk5MTEuaHViaWMub3ZoLm5ldC92MS9BVVRIXzhmZDgxMTEwODI1YzJjYTJiYWJkZTJlZjMxZmIwY2JiL2RlZmF1bHQvLm92aFB1Yi8xNDU3ODg1NjYxXzE0NjA0Nzc2NjE/dGVtcF91cmxfc2lnPWI2OTFlZTI5Y2U1ZjNmNWU3NGY5N2FhMmViMmJkYWU2NTUyYmNhODUmdGVtcF91cmxfZXhwaXJlcz0xNDYwNDc3NjYx
+
 ```
 #make a full image from the card
 dd if=/dev/mmcblk1 of=odroid_xu3_ubunt1510_poppy bs=1k

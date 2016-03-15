@@ -91,4 +91,12 @@ parted /dev/loop0
 dd if=odroid_xu3_ubunt1510_poppy odroid_xu3_ubunt1510_poppy_reduce count=9501434
 ```
 
- 
+After the first boot:
+sudo odroid-utility:sh
+
+Then select "4 Resize your root partition"
+reboot
+
+and the image is properly expanded to fit the entire memory card.
+
+
